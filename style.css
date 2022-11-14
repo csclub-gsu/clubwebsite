@@ -1,8 +1,26 @@
 
 div.displayer{
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
 }
 div.brand{
     text-align: right;
 }
+body{
+    background-image: url('programming-gabcac9fa4_1920.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1.center{
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    background-color: white;
+}
+p.text{
+    font-family: "Times New Roman", Times, serif;
+    border-style: solid;
+    border-width: 2px;
+    background-color: white;
+} 
