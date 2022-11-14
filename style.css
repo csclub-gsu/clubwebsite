@@ -1,10 +1,17 @@
 
-div.displayer{
-    display: inline-block;
-    justify-content: space-between;
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
-div.brand{
-    text-align: right;
+li{
+    float: left;
+}
+li a {
+    display: block;
+    padding: 8px;
+    background-color: #dddddd;
 }
 body{
     background-image: url('programming-gabcac9fa4_1920.png');
