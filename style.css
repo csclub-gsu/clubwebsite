@@ -4,14 +4,25 @@ ul{
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-color: #242320;
 }
 li{
     float: left;
 }
 li a {
     display: block;
-    padding: 8px;
-    background-color: #dddddd;
+    color: white;
+    text-align: center;
+    padding: 16px;
+}
+li a:hover:not(.active) {
+    background-color: white;
+    color: red;
+}
+
+.active {
+    background-color: #0882fc;
+    color: white;
 }
 body{
     background-image: url('programming-gabcac9fa4_1920.png');
