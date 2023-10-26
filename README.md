@@ -1,2 +1,1 @@
-# clubwebsite
-MAKIMA HAIR COLOR IS:
+# Club website

@@ -4,37 +4,159 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Computer Science Club of Georgia State University was formed in December of 2010. The upcoming community aims to bring together students and faculty interested in the field of Computer Science to share their knowledge and experience in computers.">
     <link rel = "stylesheet" href = "style.css"/>
-    <title>Document</title>
-</head>
-<body class = "body">
-    <!--Change the div of the hyperlink to a list, then go to style.css and customize them into a horizontal navbar. Link is from w3schools about horizontal navbar.-->
-    <div>
-        <ul>
-            <li><a class = "active" href = "index.html">Home</a></li>
-            <li><a  href = "about.html">About</a></li>
-            <li><a  href = "events.html">Events</a></li>
-        </ul>
-    </div>
+    <title>Computer Science Club at GSU</title>
     
-<div class="hero">
-    <!-- Learn & Code -->
-    <div>
-        <h3>Learn · Code · Connect </h3>
-    </div>
+    <!-- Website logo for different devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="preload" as="style" onload="this.rel='stylesheet'">
+</head>
+<body>
+    <nav>
+        <div class="limiter flex-jsb-ac">
+            <div>
+                <picture>
+                    <source srcset="/assets/logo.webp" type="image/webp">
+                    <source srcset="/assets/logo.png" type="image/png"> 
+                    <img src="/assets/logo.png" alt="club logo" width="50" height="50" />
+                </picture>
+            </div>
+            <ul class="flex-jar-ac nav-text">
+                <li><a href="#about-us" class="nav-links">About us</a></li>
+                <li><a href="#projects" class="nav-links">Projects</a></li>
+                <li><a href="#events" class="nav-links">Events</a></li>
+            </ul>
+            <div>
+                <a href="https://pin.gsu.edu/organization/computer-science-club" target="_blank" referrerpolicy="no-referrer">
+                    <button class="btn-primary">Join</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="limiter">
+            <!-- Welcome Page -->
+            <section class="grid" id="welcome">
+                <div class="grid" id="welcome-grid-container">
+                    <div id="welcome-text-container">
+                        <div class="sub-heading">Learn • Code • Connect</div>
+                        <h1>Computer Science Club at <span id="GSU">GSU</span></h1>
+                        <p>A hub for coding enthusiasts and tech lovers. Explore the world of computer science with us. Join our community and embark on a journey of learning and innovation.</p>
+                        <div id="hero-button-container">
+                            <a href="https://pin.gsu.edu/organization/computer-science-club" target="_blank" referrerpolicy="no-referrer">
+                                <button class="btn-primary">Join us</button>
+                            </a>
+                            <a href="#events"><button class="btn-secondary">Events</button></a>
+                        </div>
+                    </div>
+                    <div id="welcome-img-container">
+                        <img src="/assets/logoBackground.svg" alt="club logo background" />
+                        <picture>
+                            <source srcset="/assets/logo.webp" type="image/webp">
+                            <source srcset="/assets/logo.png" type="image/png"> 
+                            <img src="/assets/logo.png" alt="club logo" />
+                        </picture>
+                    </div>
+                </div>
+                <div id="welcome-catalog">2023-2024 University Year</div>
+            </section>
+            
+            <!-- About us -->
+            <section id="about-us" class="flex-col-jc-ac">
+                <h1>About us</h1>
+                <div>
+                    <p>The Computer Science Club of Georgia State University was formed in December of 2010. The upcoming community aims to bring together students and faculty interested in the field of Computer Science to share their knowledge and experience in computers.</p>
+                    <p>With today's competitive job market, it is imperative that every student is actively involved in the organization related to their field of discipline. The CS Club is devoted for student success in the field of computer science. By participating actively in the club, students will learn to more effectively collaborate among other students and faculties, ensuring their preparedness to face the real world beyond college education.</p>
+                    <p>Our goal is simple, encourage all members to actively engage in our events to collaborate with other students and faculties which will ultimately enhance their knowledge about computers.</p>
+                </div>
+            </section>
 
-    <!-- Club Name -->
-    <div style="position: relative; width: 700px; height: 172px; left: 65px; top: -50px;">
-        <h1 class = "center" >Computer Science Club at <font color="#1B4D9D">GSU</font></h1>
-    </div>
+            <!-- Events -->
+            <section id="events" class="flex-col-jc-ac">
+                <h1>Events</h1>
+                <iframe title="google calendar" id="event-calendar" src="https://calendar.google.com/calendar/embed?src=9fslk7cu8mgo83jobom9p3ei94%40group.calendar.google.com&ctz=America%2FNew_York" frameborder="0" scrolling="0" width="800" height="600"></iframe>
+            </section>
 
-    <!-- Club Description -->
-    <div style= "font-size: 24px; position:relative; top: -61px; width: 677px; height: 102px; left: 73px;">
-        <p class = "text" >A hub for coding enthusiasts and tech lovers. Explore the 
-            world of computer science with us. Join our community 
-            and embark on a journey of learning and innovation.</p>
-    </div>
+            <!-- Projects -->
+            <section id="projects" class="flex-col-jc-ac">
+                <h1>Projects</h1>
+                <div class="grid" id="cards-container">
+                    <div class="project-card">
+                        <picture>
+                            <source srcset="/assets/bg_img_1.webp" type="image/webp">
+                            <source srcset="/assets/bg_img_1.png" type="image/png"> 
+                            <img loading="lazy" width="500" height="316" class="card-img" src="/assets/bg_img_1.png" alt="background image 1" />
+                        </picture>
+                        <h2>Discord Bot</h2>
+                        <p>A custom bot for our discord server... <a class="visit-link" href="https://github.com/csclub-gsu/discord-bot" target="_blank" referrerpolicy="no-referrer">visit project</a></p>
+                    </div>
+                    <div class="project-card">
+                        <picture>
+                            <source srcset="/assets/bg_img_2.webp" type="image/webp">
+                            <source srcset="/assets/bg_img_2.png" type="image/png"> 
+                            <img loading="lazy" width="500" height="316" class="card-img" src="/assets/bg_img_2.png" alt="background image 2" />
+                        </picture>
+                        <h2>Parking Spaces</h2>
+                        <p>Machine learning algorithm to detect parking space... <a class="visit-link" href="https://github.com/csclub-gsu/parking_spaces" target="_blank" referrerpolicy="no-referrer">visit project</a></p>
+                    </div>
+                    <div class="project-card">
+                        <picture>
+                            <source srcset="/assets/bg_img_3.webp" type="image/webp">
+                            <source srcset="/assets/bg_img_3.png" type="image/png"> 
+                            <img loading="lazy" width="500" height="316" class="card-img" src="/assets/bg_img_3.png" alt="background image 3" />
+                        </picture>
+                        <h2>Club website</h2>
+                        <p>Develop a website for the club... <a class="visit-link" href="https://github.com/csclub-gsu/clubwebsite" target="_blank" referrerpolicy="no-referrer">visit project</a></p>
+                    </div>
+                    <div class="project-card">
+                        <picture>
+                            <source srcset="/assets/bg_img_4.webp" type="image/webp">
+                            <source srcset="/assets/bg_img_4.png" type="image/png"> 
+                            <img loading="lazy" width="500" height="316" class="card-img" src="/assets/bg_img_4.png" alt="background image 4" />
+                        </picture>
+                        <h2>Opencv object recognition</h2>
+                        <p>Learn how to create a machine learning object recognition model... <a class="visit-link" href="https://github.com/csclub-gsu/opencv-object-recognition" target="_blank" referrerpolicy="no-referrer">visit project</a>
+                    </div>
+                </div>
+            </section>
 
-</div>
+            <!-- Join us -->
+            <div id="join-us" class="flex-col-jc-ac">
+                <h1>Join us</h1>
+                <div class="flex-jsb-ac">
+                    <a href="https://discord.gg/tqAedNwY7n" target="_blank" referrerpolicy="no-referrer"><img loading="lazy" src="/assets/icon_discord.svg" alt="discord logo" width="50" height="50" /></a>
+                    <a href="https://www.instagram.com/csclubgsu" target="_blank" referrerpolicy="no-referrer"><img loading="lazy" src="/assets/icon_instagram.svg" alt="instagram logo" width="50" height="50" /></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="grid">
+        <div id="footer-main">
+            <div class="limiter flex-jar-ac">
+                <div class="footer-text-container">
+                    <h2>Useful links</h2>
+                    <a href="#about-us"><p>About us</p></a>
+                    <a href="#projects"><p>Projects</p></a>
+                </div>
+                <div class="footer-text-container">
+                    <h2>Contact</h2>
+                    <a href="mailto:dpatel243@student.gsu.edu"><img loading="lazy" src="/assets/icon_mail.svg" alt="mail icon" width="30" height="30" /></a>
+                </div>
+            </div>
+        </div>
+        <div id="footer-bottom" class="flex-col-jc-ac">
+            <div class="limiter">
+                <p>&copy; 2023 Computer Science Club at GSU </p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
